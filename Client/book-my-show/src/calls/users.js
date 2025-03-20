@@ -3,7 +3,7 @@ import { axiosInstance } from ".";
 export async function RegisterUser(value) {
   try {
     const response = await axiosInstance.post(
-      "https://bookmyshow-mern-j1p8.onrender.com/register",
+      "https://bookmyshow-mern-bygunjan.onrender.com/register",
       {
         name: value.name,
         email: value.email,
@@ -19,7 +19,7 @@ export async function RegisterUser(value) {
 export async function ForgetPasswordAPI(value) {
   try {
     const response = await axiosInstance.post(
-      "https://bookmyshow-mern-j1p8.onrender.com/forget",
+      "https://bookmyshow-mern-bygunjan.onrender.com/forget",
       {
         email: value.email,
       }

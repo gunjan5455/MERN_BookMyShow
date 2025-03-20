@@ -3,7 +3,7 @@ import { axiosInstance } from ".";
 export async function getAllMovies() {
   try {
     const response = await axiosInstance.get(
-      "https://bookmyshow-mern-j1p8.onrender.com/movies"
+      "https://bookmyshow-mern-bygunjan.onrender.com/movies"
     );
     return response;
   } catch (err) {
@@ -14,7 +14,7 @@ export async function getAllMovies() {
 export async function getMoviesById(id) {
   try {
     const response = await axiosInstance.get(
-      `https://bookmyshow-mern-j1p8.onrender.com/movies/${id}`
+      `https://bookmyshow-mern-bygunjan.onrender.com/movies/${id}`
     );
     return response;
   } catch (err) {

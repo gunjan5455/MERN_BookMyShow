@@ -4,7 +4,7 @@ export const makePaymentAPI = async (data) => {
   console.log(data);
   try {
     const response = await axiosInstance.post(
-      "https://bookmyshow-mern-j1p8.onrender.com/payment",
+      "https://bookmyshow-mern-bygunjan.onrender.com/payment",
       {
         token: data.token,
         amount: data.amount,
@@ -20,7 +20,7 @@ export const bookingAPI = async (data) => {
   console.log(data);
   try {
     const response = await axiosInstance.post(
-      "https://bookmyshow-mern-j1p8.onrender.com/booking",
+      "https://bookmyshow-mern-bygunjan.onrender.com/booking",
       {
         show: data.show,
         seats: data.seats,
